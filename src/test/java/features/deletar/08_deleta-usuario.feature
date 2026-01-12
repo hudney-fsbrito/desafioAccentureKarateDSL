@@ -2,7 +2,7 @@ Feature: Deletar um usuario
 
   Background:
     Given url baseUrl
-    * def setupData = callonce read('classpath:features/01_setup/01_setup-completo.feature')
+    * def setupData = callonce read('classpath:features/01_setup/01_setup.feature@TesteGeral')
     * def userID = setupData.usuarioID
     * def token = setupData.token
 
