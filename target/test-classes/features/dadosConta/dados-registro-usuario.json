@@ -1,4 +1,4 @@
 {
-  "userName": "#(nome)",
-  "password": "#(senhaFinal)"
+  "userName": "",
+  "password": ""
 }

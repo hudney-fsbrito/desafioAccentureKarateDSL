@@ -51794,3 +51794,822 @@ classpath:features/02_conta/02_cadastrar-usuario.feature:12
  
 09:21:27.537 [main] INFO  com.intuit.karate - [print] null 
 09:21:32.855 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 8 (5 remaining) classpath:features/02_conta/03_gerar-token.feature
+09:54:19.178 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:54:19.209 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1768222459196
+09:54:19.240 [main] DEBUG com.intuit.karate.Suite - waiting for 8 features to complete
+09:54:24.261 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:54:24.279 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:54:25.570 [main] INFO  com.intuit.karate - [print] laranjeira.net 
+09:54:25.608 [main] INFO  com.intuit.karate - [print] iytn98ysba5ph 
+09:54:26.758 [main] DEBUG com.intuit.karate - request:
+1 > POST https://bookstore.demoqa.com/Account/v1/User
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"userName":"laranjeira.net","password":"M!n2iytn98ysba5ph"}
+
+09:54:29.016 [main] DEBUG com.intuit.karate - response time in milliseconds: 2246
+1 < 201
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 12:54:28 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 88
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"58-/tVTVokEOz3Vg9cXZLr02jJinzw"
+{"userID":"a91f904c-14b7-441b-80e4-d50637312f08","username":"laranjeira.net","books":[]}
+
+09:54:29.043 [main] INFO  com.intuit.karate - [print] {
+  "userID": "a91f904c-14b7-441b-80e4-d50637312f08",
+  "username": "laranjeira.net",
+  "books": [
+  ]
+}
+ 
+09:54:29.053 [main] INFO  com.intuit.karate - [print] a91f904c-14b7-441b-80e4-d50637312f08 
+09:54:29.056 [main] INFO  com.intuit.karate - [print] {
+  "userName": "laranjeira.net",
+  "password": "M!n2iytn98ysba5ph"
+}
+ 
+09:54:31.597 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 8 (6 remaining) classpath:features/02_conta/02_cadastrar-usuario.feature
+09:57:20.377 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:57:20.406 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1768222640394
+09:57:20.440 [main] DEBUG com.intuit.karate.Suite - waiting for 8 features to complete
+09:57:25.172 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:57:25.179 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:57:26.042 [main] INFO  com.intuit.karate - [print] espinheira.biz 
+09:57:26.082 [main] INFO  com.intuit.karate - [print] d8e8aytyv 
+09:57:27.214 [main] DEBUG com.intuit.karate - request:
+1 > POST https://bookstore.demoqa.com/Account/v1/User
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 56
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"userName":"espinheira.biz","password":"M!n2d8e8aytyv"}
+
+09:57:29.324 [main] DEBUG com.intuit.karate - response time in milliseconds: 2100
+1 < 201
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 12:57:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 88
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"58-4JhpTZOo0TEoU9TGdGNdC9eOoyk"
+{"userID":"510c1759-9dcc-4ad9-bd27-0e23d73cb0e1","username":"espinheira.biz","books":[]}
+
+09:57:29.347 [main] INFO  com.intuit.karate - [print] {
+  "userID": "510c1759-9dcc-4ad9-bd27-0e23d73cb0e1",
+  "username": "espinheira.biz",
+  "books": [
+  ]
+}
+ 
+09:57:29.354 [main] INFO  com.intuit.karate - [print] 510c1759-9dcc-4ad9-bd27-0e23d73cb0e1 
+09:57:29.356 [main] INFO  com.intuit.karate - [print] {
+  "userName": "espinheira.biz",
+  "password": "M!n2d8e8aytyv"
+}
+ 
+09:57:31.818 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 8 (6 remaining) classpath:features/02_conta/02_cadastrar-usuario.feature
+09:58:03.257 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:58:03.288 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1768222683276
+09:58:03.322 [main] DEBUG com.intuit.karate.Suite - waiting for 8 features to complete
+09:58:07.626 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:58:07.634 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:58:07.933 [main] INFO  com.intuit.karate - [print] {
+  "userName": "",
+  "password": ""
+}
+ 
+09:58:08.856 [main] DEBUG com.intuit.karate - request:
+1 > POST https://bookstore.demoqa.com/Account/v1/GenerateToken
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 29
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"userName":"","password":""}
+
+09:58:10.292 [main] DEBUG com.intuit.karate - response time in milliseconds: 1428
+1 < 400
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 12:58:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 59
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"3b-kfIAtNk1nsLmMi3OoOPrbSi9YOU"
+{"code":"1200","message":"UserName and Password required."}
+
+09:58:10.338 [main] INFO  com.intuit.karate - [print] {
+  "code": "1200",
+  "message": "UserName and Password required."
+}
+ 
+09:58:10.353 [main] INFO  com.intuit.karate - [print] null 
+09:58:12.746 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 8 (5 remaining) classpath:features/02_conta/03_gerar-token.feature
+09:59:34.580 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:59:34.621 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1768222774599
+09:59:34.663 [main] DEBUG com.intuit.karate.Suite - waiting for 8 features to complete
+09:59:39.034 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:59:39.041 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:59:39.206 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:features/02_conta/02_cadastrar-usuario.feature')
+09:59:39.949 [main] INFO  com.intuit.karate - [print] de borba.name 
+09:59:39.987 [main] INFO  com.intuit.karate - [print] 7ktb049hxm1cs 
+09:59:41.113 [main] DEBUG com.intuit.karate - request:
+1 > POST https://bookstore.demoqa.com/Account/v1/User
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"userName":"de borba.name","password":"M!n27ktb049hxm1cs"}
+
+09:59:43.486 [main] DEBUG com.intuit.karate - response time in milliseconds: 2363
+1 < 201
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 12:59:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"57-+Q3u8/1yEA0fUF/mmWFT/9/neCk"
+{"userID":"79ac1606-9a9b-4823-9639-b1ef8bc45ab6","username":"de borba.name","books":[]}
+
+09:59:43.516 [main] INFO  com.intuit.karate - [print] {
+  "userID": "79ac1606-9a9b-4823-9639-b1ef8bc45ab6",
+  "username": "de borba.name",
+  "books": [
+  ]
+}
+ 
+09:59:43.524 [main] INFO  com.intuit.karate - [print] 79ac1606-9a9b-4823-9639-b1ef8bc45ab6 
+09:59:43.527 [main] INFO  com.intuit.karate - [print] {
+  "userName": "de borba.name",
+  "password": "M!n27ktb049hxm1cs"
+}
+ 
+09:59:43.531 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:features/02_conta/02_cadastrar-usuario.feature')
+09:59:44.603 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:features/02_conta/04_autorizar-usuario.feature') { bodyRequest: '#(cadastro.bodyRequest)' }
+09:59:44.661 [main] DEBUG com.intuit.karate - request:
+1 > POST https://bookstore.demoqa.com/Account/v1/Authorized
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"userName":"de borba.name","password":"M!n27ktb049hxm1cs"}
+
+09:59:45.561 [main] DEBUG com.intuit.karate - response time in milliseconds: 898
+1 < 200
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 12:59:45 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 5
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"5-fLbvuYullyqbUJDcLlF/4U0SywQ"
+false
+
+09:59:45.571 [main] INFO  com.intuit.karate - [print] false 
+09:59:45.572 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:features/02_conta/04_autorizar-usuario.feature') { bodyRequest: '#(cadastro.bodyRequest)' }
+09:59:45.583 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:features/02_conta/03_gerar-token.feature') { bodyRequest: '#(cadastro.bodyRequest)' }
+09:59:45.614 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bodyRequest' with new value: read('classpath:features/dadosConta/dados-registro-usuario.json')
+09:59:45.624 [main] INFO  com.intuit.karate - [print] {
+  "userName": "",
+  "password": ""
+}
+ 
+09:59:45.628 [main] DEBUG com.intuit.karate - request:
+1 > POST https://bookstore.demoqa.com/Account/v1/GenerateToken
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 29
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"userName":"","password":""}
+
+09:59:46.154 [main] DEBUG com.intuit.karate - response time in milliseconds: 524
+1 < 400
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 12:59:46 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 59
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"3b-kfIAtNk1nsLmMi3OoOPrbSi9YOU"
+{"code":"1200","message":"UserName and Password required."}
+
+09:59:46.181 [main] INFO  com.intuit.karate - [print] {
+  "code": "1200",
+  "message": "UserName and Password required."
+}
+ 
+09:59:46.191 [main] INFO  com.intuit.karate - [print] null 
+09:59:46.193 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:features/02_conta/03_gerar-token.feature') { bodyRequest: '#(cadastro.bodyRequest)' }
+09:59:46.207 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:features/03_livraria/05_listar-livros.feature@all')
+09:59:46.208 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:features/03_livraria/05_listar-livros.feature - call by tag at line 7: all
+09:59:46.237 [main] DEBUG com.intuit.karate - request:
+1 > GET https://bookstore.demoqa.com/BookStore/v1/Books
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:59:46.792 [main] DEBUG com.intuit.karate - response time in milliseconds: 552
+1 < 200
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 12:59:46 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 4514
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY"
+{"books":[{"isbn":"9781449325862","title":"Git Pocket Guide","subTitle":"A Working Introduction","author":"Richard E. Silverman","publish_date":"2020-06-04T08:48:39.000Z","publisher":"O'Reilly Media","pages":234,"description":"This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp","website":"http://chimera.labs.oreilly.com/books/1230000000561/index.html"},{"isbn":"9781449331818","title":"Learning JavaScript Design Patterns","subTitle":"A JavaScript and jQuery Developer's Guide","author":"Addy Osmani","publish_date":"2020-06-04T09:11:40.000Z","publisher":"O'Reilly Media","pages":254,"description":"With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da","website":"http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/"},{"isbn":"9781449337711","title":"Designing Evolvable Web APIs with ASP.NET","subTitle":"Harnessing the Power of the Web","author":"Glenn Block et al.","publish_date":"2020-06-04T09:12:43.000Z","publisher":"O'Reilly Media","pages":238,"description":"Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft","website":"http://chimera.labs.oreilly.com/books/1234000001708/index.html"},{"isbn":"9781449365035","title":"Speaking JavaScript","subTitle":"An In-Depth Guide for Programmers","author":"Axel Rauschmayer","publish_date":"2014-02-01T00:00:00.000Z","publisher":"O'Reilly Media","pages":460,"description":"Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o","website":"http://speakingjs.com/"},{"isbn":"9781491904244","title":"You Don't Know JS","subTitle":"ES6 & Beyond","author":"Kyle Simpson","publish_date":"2015-12-27T00:00:00.000Z","publisher":"O'Reilly Media","pages":278,"description":"No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\"You Don’t Know JS\\\" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st","website":"https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&%20beyond"},{"isbn":"9781491950296","title":"Programming JavaScript Applications","subTitle":"Robust Web Architecture with Node, HTML5, and Modern JS Libraries","author":"Eric Elliott","publish_date":"2014-07-01T00:00:00.000Z","publisher":"O'Reilly Media","pages":254,"description":"Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex","website":"http://chimera.labs.oreilly.com/books/1234000000262/index.html"},{"isbn":"9781593275846","title":"Eloquent JavaScript, Second Edition","subTitle":"A Modern Introduction to Programming","author":"Marijn Haverbeke","publish_date":"2014-12-14T00:00:00.000Z","publisher":"No Starch Press","pages":472,"description":"JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale ","website":"http://eloquentjavascript.net/"},{"isbn":"9781593277574","title":"Understanding ECMAScript 6","subTitle":"The Definitive Guide for JavaScript Developers","author":"Nicholas C. Zakas","publish_date":"2016-09-03T00:00:00.000Z","publisher":"No Starch Press","pages":352,"description":"ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E","website":"https://leanpub.com/understandinges6/read"}]}
+
+09:59:46.803 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+    {
+      "isbn": "9781449325862",
+      "title": "Git Pocket Guide",
+      "subTitle": "A Working Introduction",
+      "author": "Richard E. Silverman",
+      "publish_date": "2020-06-04T08:48:39.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 234,
+      "description": "This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp",
+      "website": "http://chimera.labs.oreilly.com/books/1230000000561/index.html"
+    },
+    {
+      "isbn": "9781449331818",
+      "title": "Learning JavaScript Design Patterns",
+      "subTitle": "A JavaScript and jQuery Developer's Guide",
+      "author": "Addy Osmani",
+      "publish_date": "2020-06-04T09:11:40.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 254,
+      "description": "With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da",
+      "website": "http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/"
+    },
+    {
+      "isbn": "9781449337711",
+      "title": "Designing Evolvable Web APIs with ASP.NET",
+      "subTitle": "Harnessing the Power of the Web",
+      "author": "Glenn Block et al.",
+      "publish_date": "2020-06-04T09:12:43.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 238,
+      "description": "Design and build Web APIs for a broad range of clients\u2014including browsers and mobile devices\u2014that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft",
+      "website": "http://chimera.labs.oreilly.com/books/1234000001708/index.html"
+    },
+    {
+      "isbn": "9781449365035",
+      "title": "Speaking JavaScript",
+      "subTitle": "An In-Depth Guide for Programmers",
+      "author": "Axel Rauschmayer",
+      "publish_date": "2014-02-01T00:00:00.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 460,
+      "description": "Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o",
+      "website": "http://speakingjs.com/"
+    },
+    {
+      "isbn": "9781491904244",
+      "title": "You Don't Know JS",
+      "subTitle": "ES6 & Beyond",
+      "author": "Kyle Simpson",
+      "publish_date": "2015-12-27T00:00:00.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 278,
+      "description": "No matter how much experience you have with JavaScript, odds are you don\u2019t fully understand the language. As part of the \\\"You Don\u2019t Know JS\\\" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st",
+      "website": "https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&%20beyond"
+    },
+    {
+      "isbn": "9781491950296",
+      "title": "Programming JavaScript Applications",
+      "subTitle": "Robust Web Architecture with Node, HTML5, and Modern JS Libraries",
+      "author": "Eric Elliott",
+      "publish_date": "2014-07-01T00:00:00.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 254,
+      "description": "Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex",
+      "website": "http://chimera.labs.oreilly.com/books/1234000000262/index.html"
+    },
+    {
+      "isbn": "9781593275846",
+      "title": "Eloquent JavaScript, Second Edition",
+      "subTitle": "A Modern Introduction to Programming",
+      "author": "Marijn Haverbeke",
+      "publish_date": "2014-12-14T00:00:00.000Z",
+      "publisher": "No Starch Press",
+      "pages": 472,
+      "description": "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale ",
+      "website": "http://eloquentjavascript.net/"
+    },
+    {
+      "isbn": "9781593277574",
+      "title": "Understanding ECMAScript 6",
+      "subTitle": "The Definitive Guide for JavaScript Developers",
+      "author": "Nicholas C. Zakas",
+      "publish_date": "2016-09-03T00:00:00.000Z",
+      "publisher": "No Starch Press",
+      "pages": 352,
+      "description": "ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E",
+      "website": "https://leanpub.com/understandinges6/read"
+    }
+  ]
+}
+ 
+09:59:46.844 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:features/03_livraria/05_listar-livros.feature@all')
+09:59:46.894 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'livros' with new value: call read('classpath:features/03_livraria/05_listar-livros.feature@all')
+09:59:46.901 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:features/03_livraria/05_listar-livros.feature - call by tag at line 7: all
+09:59:46.935 [main] DEBUG com.intuit.karate - request:
+1 > GET https://bookstore.demoqa.com/BookStore/v1/Books
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:59:47.524 [main] DEBUG com.intuit.karate - response time in milliseconds: 585
+1 < 200
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 12:59:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 4514
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY"
+{"books":[{"isbn":"9781449325862","title":"Git Pocket Guide","subTitle":"A Working Introduction","author":"Richard E. Silverman","publish_date":"2020-06-04T08:48:39.000Z","publisher":"O'Reilly Media","pages":234,"description":"This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp","website":"http://chimera.labs.oreilly.com/books/1230000000561/index.html"},{"isbn":"9781449331818","title":"Learning JavaScript Design Patterns","subTitle":"A JavaScript and jQuery Developer's Guide","author":"Addy Osmani","publish_date":"2020-06-04T09:11:40.000Z","publisher":"O'Reilly Media","pages":254,"description":"With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da","website":"http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/"},{"isbn":"9781449337711","title":"Designing Evolvable Web APIs with ASP.NET","subTitle":"Harnessing the Power of the Web","author":"Glenn Block et al.","publish_date":"2020-06-04T09:12:43.000Z","publisher":"O'Reilly Media","pages":238,"description":"Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft","website":"http://chimera.labs.oreilly.com/books/1234000001708/index.html"},{"isbn":"9781449365035","title":"Speaking JavaScript","subTitle":"An In-Depth Guide for Programmers","author":"Axel Rauschmayer","publish_date":"2014-02-01T00:00:00.000Z","publisher":"O'Reilly Media","pages":460,"description":"Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o","website":"http://speakingjs.com/"},{"isbn":"9781491904244","title":"You Don't Know JS","subTitle":"ES6 & Beyond","author":"Kyle Simpson","publish_date":"2015-12-27T00:00:00.000Z","publisher":"O'Reilly Media","pages":278,"description":"No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\"You Don’t Know JS\\\" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st","website":"https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&%20beyond"},{"isbn":"9781491950296","title":"Programming JavaScript Applications","subTitle":"Robust Web Architecture with Node, HTML5, and Modern JS Libraries","author":"Eric Elliott","publish_date":"2014-07-01T00:00:00.000Z","publisher":"O'Reilly Media","pages":254,"description":"Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex","website":"http://chimera.labs.oreilly.com/books/1234000000262/index.html"},{"isbn":"9781593275846","title":"Eloquent JavaScript, Second Edition","subTitle":"A Modern Introduction to Programming","author":"Marijn Haverbeke","publish_date":"2014-12-14T00:00:00.000Z","publisher":"No Starch Press","pages":472,"description":"JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale ","website":"http://eloquentjavascript.net/"},{"isbn":"9781593277574","title":"Understanding ECMAScript 6","subTitle":"The Definitive Guide for JavaScript Developers","author":"Nicholas C. Zakas","publish_date":"2016-09-03T00:00:00.000Z","publisher":"No Starch Press","pages":352,"description":"ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E","website":"https://leanpub.com/understandinges6/read"}]}
+
+09:59:47.532 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+    {
+      "isbn": "9781449325862",
+      "title": "Git Pocket Guide",
+      "subTitle": "A Working Introduction",
+      "author": "Richard E. Silverman",
+      "publish_date": "2020-06-04T08:48:39.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 234,
+      "description": "This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp",
+      "website": "http://chimera.labs.oreilly.com/books/1230000000561/index.html"
+    },
+    {
+      "isbn": "9781449331818",
+      "title": "Learning JavaScript Design Patterns",
+      "subTitle": "A JavaScript and jQuery Developer's Guide",
+      "author": "Addy Osmani",
+      "publish_date": "2020-06-04T09:11:40.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 254,
+      "description": "With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da",
+      "website": "http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/"
+    },
+    {
+      "isbn": "9781449337711",
+      "title": "Designing Evolvable Web APIs with ASP.NET",
+      "subTitle": "Harnessing the Power of the Web",
+      "author": "Glenn Block et al.",
+      "publish_date": "2020-06-04T09:12:43.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 238,
+      "description": "Design and build Web APIs for a broad range of clients\u2014including browsers and mobile devices\u2014that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft",
+      "website": "http://chimera.labs.oreilly.com/books/1234000001708/index.html"
+    },
+    {
+      "isbn": "9781449365035",
+      "title": "Speaking JavaScript",
+      "subTitle": "An In-Depth Guide for Programmers",
+      "author": "Axel Rauschmayer",
+      "publish_date": "2014-02-01T00:00:00.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 460,
+      "description": "Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o",
+      "website": "http://speakingjs.com/"
+    },
+    {
+      "isbn": "9781491904244",
+      "title": "You Don't Know JS",
+      "subTitle": "ES6 & Beyond",
+      "author": "Kyle Simpson",
+      "publish_date": "2015-12-27T00:00:00.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 278,
+      "description": "No matter how much experience you have with JavaScript, odds are you don\u2019t fully understand the language. As part of the \\\"You Don\u2019t Know JS\\\" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st",
+      "website": "https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&%20beyond"
+    },
+    {
+      "isbn": "9781491950296",
+      "title": "Programming JavaScript Applications",
+      "subTitle": "Robust Web Architecture with Node, HTML5, and Modern JS Libraries",
+      "author": "Eric Elliott",
+      "publish_date": "2014-07-01T00:00:00.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 254,
+      "description": "Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex",
+      "website": "http://chimera.labs.oreilly.com/books/1234000000262/index.html"
+    },
+    {
+      "isbn": "9781593275846",
+      "title": "Eloquent JavaScript, Second Edition",
+      "subTitle": "A Modern Introduction to Programming",
+      "author": "Marijn Haverbeke",
+      "publish_date": "2014-12-14T00:00:00.000Z",
+      "publisher": "No Starch Press",
+      "pages": 472,
+      "description": "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale ",
+      "website": "http://eloquentjavascript.net/"
+    },
+    {
+      "isbn": "9781593277574",
+      "title": "Understanding ECMAScript 6",
+      "subTitle": "The Definitive Guide for JavaScript Developers",
+      "author": "Nicholas C. Zakas",
+      "publish_date": "2016-09-03T00:00:00.000Z",
+      "publisher": "No Starch Press",
+      "pages": 352,
+      "description": "ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E",
+      "website": "https://leanpub.com/understandinges6/read"
+    }
+  ]
+}
+ 
+09:59:47.545 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'isbn' with new value: livros.isbnSalvo
+09:59:47.577 [main] DEBUG com.intuit.karate - request:
+1 > POST https://bookstore.demoqa.com/BookStore/v1/Books
+1 > Authorization: Bearer null
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 96
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"userId":"79ac1606-9a9b-4823-9639-b1ef8bc45ab6","collectionOfIsbns":[{"isbn":"9781449325862"}]}
+
+09:59:49.733 [main] DEBUG com.intuit.karate - response time in milliseconds: 2154
+1 < 401
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 12:59:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 48
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"30-V67npMN18Zy3bnk1xW2xtLGgx8c"
+{"code":"1200","message":"User not authorized!"}
+
+09:59:49.768 [main] ERROR com.intuit.karate - classpath:features/03_livraria/06_registrar-livro-usuario.feature:24
+Then status 201
+status code was: 401, expected: 201, response time in milliseconds: 2154, url: https://bookstore.demoqa.com/BookStore/v1/Books, response: 
+{"code":"1200","message":"User not authorized!"}
+classpath:features/03_livraria/06_registrar-livro-usuario.feature:24
+09:59:49.780 [main] ERROR com.intuit.karate - classpath:features/01_setup/01_setup.feature:30
+* call read('classpath:features/03_livraria/06_registrar-livro-usuario.feature') { token: '#(token)', userID: '#(userID)', isbn: '#(isbn)' }
+status code was: 401, expected: 201, response time in milliseconds: 2154, url: https://bookstore.demoqa.com/BookStore/v1/Books, response: 
+{"code":"1200","message":"User not authorized!"}
+classpath:features/03_livraria/06_registrar-livro-usuario.feature:24
+classpath:features/01_setup/01_setup.feature:30
+09:59:53.793 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 8 (7 remaining) classpath:features/01_setup/01_setup.feature
+10:26:26.990 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:26:27.015 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1768224387005
+10:26:27.040 [main] DEBUG com.intuit.karate.Suite - waiting for 8 features to complete
+10:26:31.368 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:26:31.379 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:26:32.890 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bodyRequest' with new value: {
+"userName": "#(nome)",
+"password": "#(senhaFinal)"
+}
+10:26:33.989 [main] DEBUG com.intuit.karate - request:
+1 > POST https://bookstore.demoqa.com/Account/v1/User
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"userName":"pimenta.info","password":"M!n2gyj34911wk07nf"}
+
+10:26:36.293 [main] DEBUG com.intuit.karate - response time in milliseconds: 2292
+1 < 201
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 13:26:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 86
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"56-ADL8EOedTq4YDLGxjkFJaYW2uSQ"
+{"userID":"ceb67545-206a-4feb-b034-a54d63583a71","username":"pimenta.info","books":[]}
+
+10:26:36.320 [main] INFO  com.intuit.karate - [print] {
+  "userID": "ceb67545-206a-4feb-b034-a54d63583a71",
+  "username": "pimenta.info",
+  "books": [
+  ]
+}
+ 
+10:26:36.329 [main] INFO  com.intuit.karate - [print] ceb67545-206a-4feb-b034-a54d63583a71 
+10:26:36.333 [main] INFO  com.intuit.karate - [print] {
+  "userName": "pimenta.info",
+  "password": "M!n2gyj34911wk07nf"
+}
+ 
+10:26:36.341 [main] INFO  com.intuit.karate - [print] {
+  "userName": "pimenta.info",
+  "password": "M!n2gyj34911wk07nf"
+}
+ 
+10:26:36.347 [main] DEBUG com.intuit.karate - request:
+2 > POST https://bookstore.demoqa.com/Account/v1/GenerateToken
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 59
+2 > Host: bookstore.demoqa.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 > Accept-Encoding: gzip,deflate
+{"userName":"pimenta.info","password":"M!n2gyj34911wk07nf"}
+
+10:26:37.614 [main] DEBUG com.intuit.karate - response time in milliseconds: 1264
+2 < 200
+2 < Server: nginx/1.17.10 (Ubuntu)
+2 < Date: Mon, 12 Jan 2026 13:26:37 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 292
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < ETag: W/"124-WyXyG+FYH2pSEHCI+yvbWQomX9Q"
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InBpbWVudGEuaW5mbyIsInBhc3N3b3JkIjoiTSFuMmd5ajM0OTExd2swN25mIiwiaWF0IjoxNzY4MjI0Mzk2fQ.uqkVtqR1poFdtOXiHYzp5Xzmch1QS0M8CWtW_K6cjfY","expires":"2026-01-19T13:26:36.907Z","status":"Success","result":"User authorized successfully."}
+
+10:26:37.641 [main] INFO  com.intuit.karate - [print] {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InBpbWVudGEuaW5mbyIsInBhc3N3b3JkIjoiTSFuMmd5ajM0OTExd2swN25mIiwiaWF0IjoxNzY4MjI0Mzk2fQ.uqkVtqR1poFdtOXiHYzp5Xzmch1QS0M8CWtW_K6cjfY",
+  "expires": "2026-01-19T13:26:36.907Z",
+  "status": "Success",
+  "result": "User authorized successfully."
+}
+ 
+10:26:37.649 [main] INFO  com.intuit.karate - [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InBpbWVudGEuaW5mbyIsInBhc3N3b3JkIjoiTSFuMmd5ajM0OTExd2swN25mIiwiaWF0IjoxNzY4MjI0Mzk2fQ.uqkVtqR1poFdtOXiHYzp5Xzmch1QS0M8CWtW_K6cjfY 
+10:26:37.691 [main] ERROR com.intuit.karate - classpath:features/01_setup/01_setup.feature:41
+And request payload
+js failed:
+>>>>
+01: payload
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "payload" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/01_setup/01_setup.feature:41
+10:26:40.493 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 8 (7 remaining) classpath:features/01_setup/01_setup.feature
+10:29:53.484 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:29:53.515 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1768224593500
+10:29:53.555 [main] DEBUG com.intuit.karate.Suite - waiting for 8 features to complete
+10:29:57.626 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:29:57.626 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:29:58.735 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bodyRequest' with new value: {
+"userName": "#(nome)",
+"password": "#(senhaFinal)"
+}
+10:29:59.734 [main] DEBUG com.intuit.karate - request:
+1 > POST https://bookstore.demoqa.com/Account/v1/User
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"userName":"jaques.org","password":"M!n2xr0oq6hz4"}
+
+10:30:01.711 [main] DEBUG com.intuit.karate - response time in milliseconds: 1969
+1 < 201
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 13:30:01 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"54-FduLI2CiF0ZTL8pWlvHZ0/n3NhM"
+{"userID":"33ae263a-defa-4a2b-99fc-9bbec98cddd7","username":"jaques.org","books":[]}
+
+10:30:01.734 [main] INFO  com.intuit.karate - [print] {
+  "userID": "33ae263a-defa-4a2b-99fc-9bbec98cddd7",
+  "username": "jaques.org",
+  "books": [
+  ]
+}
+ 
+10:30:01.741 [main] INFO  com.intuit.karate - [print] 33ae263a-defa-4a2b-99fc-9bbec98cddd7 
+10:30:01.744 [main] INFO  com.intuit.karate - [print] {
+  "userName": "jaques.org",
+  "password": "M!n2xr0oq6hz4"
+}
+ 
+10:30:01.750 [main] INFO  com.intuit.karate - [print] {
+  "userName": "jaques.org",
+  "password": "M!n2xr0oq6hz4"
+}
+ 
+10:30:01.750 [main] DEBUG com.intuit.karate - request:
+2 > POST https://bookstore.demoqa.com/Account/v1/GenerateToken
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 52
+2 > Host: bookstore.demoqa.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 > Accept-Encoding: gzip,deflate
+{"userName":"jaques.org","password":"M!n2xr0oq6hz4"}
+
+10:30:03.159 [main] DEBUG com.intuit.karate - response time in milliseconds: 1407
+2 < 200
+2 < Server: nginx/1.17.10 (Ubuntu)
+2 < Date: Mon, 12 Jan 2026 13:30:03 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 282
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < ETag: W/"11a-ruCIzZn5RuhxQILOBK1gQ+X05IM"
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImphcXVlcy5vcmciLCJwYXNzd29yZCI6Ik0hbjJ4cjBvcTZoejQiLCJpYXQiOjE3NjgyMjQ2MDJ9.SlM1JZfW4T4xwuDAwGUxM2t-8GSTCtwFTAqv8LsLdl4","expires":"2026-01-19T13:30:02.312Z","status":"Success","result":"User authorized successfully."}
+
+10:30:03.251 [main] INFO  com.intuit.karate - [print] {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImphcXVlcy5vcmciLCJwYXNzd29yZCI6Ik0hbjJ4cjBvcTZoejQiLCJpYXQiOjE3NjgyMjQ2MDJ9.SlM1JZfW4T4xwuDAwGUxM2t-8GSTCtwFTAqv8LsLdl4",
+  "expires": "2026-01-19T13:30:02.312Z",
+  "status": "Success",
+  "result": "User authorized successfully."
+}
+ 
+10:30:03.263 [main] INFO  com.intuit.karate - [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImphcXVlcy5vcmciLCJwYXNzd29yZCI6Ik0hbjJ4cjBvcTZoejQiLCJpYXQiOjE3NjgyMjQ2MDJ9.SlM1JZfW4T4xwuDAwGUxM2t-8GSTCtwFTAqv8LsLdl4 
+10:30:03.274 [main] DEBUG com.intuit.karate - request:
+3 > POST https://bookstore.demoqa.com/Account/v1/Authorized
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 52
+3 > Host: bookstore.demoqa.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+3 > Accept-Encoding: gzip,deflate
+{"userName":"jaques.org","password":"M!n2xr0oq6hz4"}
+
+10:30:03.922 [main] DEBUG com.intuit.karate - response time in milliseconds: 647
+3 < 200
+3 < Server: nginx/1.17.10 (Ubuntu)
+3 < Date: Mon, 12 Jan 2026 13:30:03 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Content-Length: 4
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < ETag: W/"4-X/5TO4MPCKAyY0ipFgr6/IraRNs"
+true
+
+10:30:03.922 [main] INFO  com.intuit.karate - [print] true 
+10:30:04.000 [main] DEBUG com.intuit.karate - request:
+1 > GET https://bookstore.demoqa.com/BookStore/v1/Books
+1 > Host: bookstore.demoqa.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:30:04.579 [main] DEBUG com.intuit.karate - response time in milliseconds: 562
+1 < 200
+1 < Server: nginx/1.17.10 (Ubuntu)
+1 < Date: Mon, 12 Jan 2026 13:30:04 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 4514
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < ETag: W/"11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY"
+{"books":[{"isbn":"9781449325862","title":"Git Pocket Guide","subTitle":"A Working Introduction","author":"Richard E. Silverman","publish_date":"2020-06-04T08:48:39.000Z","publisher":"O'Reilly Media","pages":234,"description":"This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp","website":"http://chimera.labs.oreilly.com/books/1230000000561/index.html"},{"isbn":"9781449331818","title":"Learning JavaScript Design Patterns","subTitle":"A JavaScript and jQuery Developer's Guide","author":"Addy Osmani","publish_date":"2020-06-04T09:11:40.000Z","publisher":"O'Reilly Media","pages":254,"description":"With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da","website":"http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/"},{"isbn":"9781449337711","title":"Designing Evolvable Web APIs with ASP.NET","subTitle":"Harnessing the Power of the Web","author":"Glenn Block et al.","publish_date":"2020-06-04T09:12:43.000Z","publisher":"O'Reilly Media","pages":238,"description":"Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft","website":"http://chimera.labs.oreilly.com/books/1234000001708/index.html"},{"isbn":"9781449365035","title":"Speaking JavaScript","subTitle":"An In-Depth Guide for Programmers","author":"Axel Rauschmayer","publish_date":"2014-02-01T00:00:00.000Z","publisher":"O'Reilly Media","pages":460,"description":"Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o","website":"http://speakingjs.com/"},{"isbn":"9781491904244","title":"You Don't Know JS","subTitle":"ES6 & Beyond","author":"Kyle Simpson","publish_date":"2015-12-27T00:00:00.000Z","publisher":"O'Reilly Media","pages":278,"description":"No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\"You Don’t Know JS\\\" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st","website":"https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&%20beyond"},{"isbn":"9781491950296","title":"Programming JavaScript Applications","subTitle":"Robust Web Architecture with Node, HTML5, and Modern JS Libraries","author":"Eric Elliott","publish_date":"2014-07-01T00:00:00.000Z","publisher":"O'Reilly Media","pages":254,"description":"Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex","website":"http://chimera.labs.oreilly.com/books/1234000000262/index.html"},{"isbn":"9781593275846","title":"Eloquent JavaScript, Second Edition","subTitle":"A Modern Introduction to Programming","author":"Marijn Haverbeke","publish_date":"2014-12-14T00:00:00.000Z","publisher":"No Starch Press","pages":472,"description":"JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale ","website":"http://eloquentjavascript.net/"},{"isbn":"9781593277574","title":"Understanding ECMAScript 6","subTitle":"The Definitive Guide for JavaScript Developers","author":"Nicholas C. Zakas","publish_date":"2016-09-03T00:00:00.000Z","publisher":"No Starch Press","pages":352,"description":"ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E","website":"https://leanpub.com/understandinges6/read"}]}
+
+10:30:04.592 [main] INFO  com.intuit.karate - [print] {
+  "books": [
+    {
+      "isbn": "9781449325862",
+      "title": "Git Pocket Guide",
+      "subTitle": "A Working Introduction",
+      "author": "Richard E. Silverman",
+      "publish_date": "2020-06-04T08:48:39.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 234,
+      "description": "This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp",
+      "website": "http://chimera.labs.oreilly.com/books/1230000000561/index.html"
+    },
+    {
+      "isbn": "9781449331818",
+      "title": "Learning JavaScript Design Patterns",
+      "subTitle": "A JavaScript and jQuery Developer's Guide",
+      "author": "Addy Osmani",
+      "publish_date": "2020-06-04T09:11:40.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 254,
+      "description": "With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da",
+      "website": "http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/"
+    },
+    {
+      "isbn": "9781449337711",
+      "title": "Designing Evolvable Web APIs with ASP.NET",
+      "subTitle": "Harnessing the Power of the Web",
+      "author": "Glenn Block et al.",
+      "publish_date": "2020-06-04T09:12:43.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 238,
+      "description": "Design and build Web APIs for a broad range of clients\u2014including browsers and mobile devices\u2014that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft",
+      "website": "http://chimera.labs.oreilly.com/books/1234000001708/index.html"
+    },
+    {
+      "isbn": "9781449365035",
+      "title": "Speaking JavaScript",
+      "subTitle": "An In-Depth Guide for Programmers",
+      "author": "Axel Rauschmayer",
+      "publish_date": "2014-02-01T00:00:00.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 460,
+      "description": "Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o",
+      "website": "http://speakingjs.com/"
+    },
+    {
+      "isbn": "9781491904244",
+      "title": "You Don't Know JS",
+      "subTitle": "ES6 & Beyond",
+      "author": "Kyle Simpson",
+      "publish_date": "2015-12-27T00:00:00.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 278,
+      "description": "No matter how much experience you have with JavaScript, odds are you don\u2019t fully understand the language. As part of the \\\"You Don\u2019t Know JS\\\" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st",
+      "website": "https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&%20beyond"
+    },
+    {
+      "isbn": "9781491950296",
+      "title": "Programming JavaScript Applications",
+      "subTitle": "Robust Web Architecture with Node, HTML5, and Modern JS Libraries",
+      "author": "Eric Elliott",
+      "publish_date": "2014-07-01T00:00:00.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 254,
+      "description": "Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex",
+      "website": "http://chimera.labs.oreilly.com/books/1234000000262/index.html"
+    },
+    {
+      "isbn": "9781593275846",
+      "title": "Eloquent JavaScript, Second Edition",
+      "subTitle": "A Modern Introduction to Programming",
+      "author": "Marijn Haverbeke",
+      "publish_date": "2014-12-14T00:00:00.000Z",
+      "publisher": "No Starch Press",
+      "pages": 472,
+      "description": "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale ",
+      "website": "http://eloquentjavascript.net/"
+    },
+    {
+      "isbn": "9781593277574",
+      "title": "Understanding ECMAScript 6",
+      "subTitle": "The Definitive Guide for JavaScript Developers",
+      "author": "Nicholas C. Zakas",
+      "publish_date": "2016-09-03T00:00:00.000Z",
+      "publisher": "No Starch Press",
+      "pages": 352,
+      "description": "ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E",
+      "website": "https://leanpub.com/understandinges6/read"
+    }
+  ]
+}
+ 
+10:30:04.722 [main] ERROR com.intuit.karate - classpath:features/03_livraria/05_listar-livros.feature:19
+* def busca = call read('05_listar-livros.feature@all')
+js failed:
+>>>>
+01: read('05_listar-livros.feature@all')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Users\Usuario\Desktop\Accenture\Academia QE\Karate DSL\desafioAccentureKarateDSL\target\test-classes\features\01_setup\05_listar-livros.feature (O sistema não pode encontrar o arquivo especificado)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.FeatureParser.parse(FeatureParser.java:70)
+- com.intuit.karate.core.Feature.read(Feature.java:63)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:65)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:features/03_livraria/05_listar-livros.feature:19
+10:30:04.733 [main] ERROR com.intuit.karate - classpath:features/01_setup/01_setup.feature:46
+* def livros = call read('classpath:features/03_livraria/05_listar-livros.feature')
+js failed:
+>>>>
+01: read('05_listar-livros.feature@all')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Users\Usuario\Desktop\Accenture\Academia QE\Karate DSL\desafioAccentureKarateDSL\target\test-classes\features\01_setup\05_listar-livros.feature (O sistema não pode encontrar o arquivo especificado)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.FeatureParser.parse(FeatureParser.java:70)
+- com.intuit.karate.core.Feature.read(Feature.java:63)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:65)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:109)
+- <js>.:program(Unnamed:1)
+
+classpath:features/03_livraria/05_listar-livros.feature:19
+classpath:features/01_setup/01_setup.feature:46
+10:30:08.078 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 8 (7 remaining) classpath:features/01_setup/01_setup.feature

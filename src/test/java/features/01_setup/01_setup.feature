@@ -1,34 +1,69 @@
 Feature: Setup para teste geral
 
   @TesteGeral
-  Scenario: Preparar dados
-    * def cadastro = callonce read('classpath:features/02_conta/02_cadastrar-usuario.feature')
-    * def userID = cadastro.usuarioID
-    * def userName = cadastro.nome
-    * def password = cadastro.senhaFinal
+  Scenario: Cadastra usuario, gera o token e autoriza usuario
+    * def nome = Java.type('features.support.utils.Utils').gerarNomeFake()
+    * def senha = Java.type('features.support.utils.Utils').gerarSenha()
+    * def senhaFinal = "M!n2" + senha
 
-    * eval java.lang.Thread.sleep(1000)
+    * def bodyRequest = read('classpath:features/dadosConta/dados-registro-usuario.json')
+    * def bodyRequest =
+    """
+      {
+      "userName": "#(nome)",
+      "password": "#(senhaFinal)"
+      }
+    """
 
-    * def autorizacao = callonce read('classpath:features/02_conta/04_autorizar-usuario.feature') { bodyRequest: '#(cadastro.bodyRequest)' }
 
-    * def tokenResult = callonce read('classpath:features/02_conta/03_gerar-token.feature') { bodyRequest: '#(cadastro.bodyRequest)' }
-    * def token = tokenResult.response.token
+    Given url baseUrl
+    And path "/Account/v1/User"
+    And request bodyRequest
+    When method post
+    Then status 201
+    And print response
+    And def usuarioID = response.userID
+    And print usuarioID
+    * print bodyRequest
 
-    * def livros = callonce read('classpath:features/03_livraria/05_listar-livros.feature@all')
+    Given url baseUrl
+    And path "/Account/v1/GenerateToken"
+    And request bodyRequest
+    * print bodyRequest
+    When method post
+    Then response.token != null
+    * print response
+    * def token = response.token
+    * print token
+
+    Given url baseUrl
+    And path "/Account/v1/Authorized"
+    And request bodyRequest
+    When method post
+    Then status 200
+    * print response
+
+    * def livros = call read('classpath:features/03_livraria/05_listar-livros.feature')
     * def isbn = livros.isbnSalvo
+    * print 'ISBN selecionado:', isbn
+
+    * Karate.set('globalUserID', usuarioID)
+    * karate.set('globalUserName', nome)
+    * karate.set('globalSenha', senhaFinal)
+    * karate.set('globalToken', token)
+    * karate.set('globalBodyRequest', bodyRequest)
 
     * def result =
-  """
-  {
-    userID:   "#(userID)",
-    userName: "#(userName)",
-    password: "#(password)",
-    token:    "#(token)",
-    isbn:     "#(isbn)"
-  }
-  """
-  * call read('classpath:features/03_livraria/06_registrar-livro-usuario.feature') { token: '#(token)', userID: '#(userID)', isbn: '#(isbn)' }
+    """
+    {
+      usuarioID: '#(usuarioID)',
+      userName: '#(nome)',
+      password: '#(senhaFinal)',
+      token: '#(token)',
+      bodyRequest: #(bodyRequest),
+      isbn: '#(isbn)'
+    }
+    """
 
-  * call read('classpath:features/03_livraria/07_atualizar-isbn.feature') { token: '#(token)', userID: '#(userID)', isbn: '#(isbn)' }
-
-  * call read('classpath:features/02_conta/08_deletar-usuario.feature') { token: '#(token)', userID: '#(userID)' }
+    * print result
+    * return result
