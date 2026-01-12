@@ -1,0 +1,3 @@
+qa:
+  env: 'qa'
+  baseUrl: 'https://bookstore.demoqa.com'

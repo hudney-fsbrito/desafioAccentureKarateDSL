@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3}];
+var items = [{"id":1,"group":1,"content":"features\/livraria\/listar-livros[1:7]","start":1768162904018,"end":1768162907152,"title":"features\/livraria\/listar-livros[1:7] 17:21:44.018-17:21:47.152 Listar catálogo"},{"id":2,"group":2,"content":"features\/livraria\/listar-livros[2:18]","start":1768162904021,"end":1768162904454,"title":"features\/livraria\/listar-livros[2:18] 17:21:44.021-17:21:44.454 Listar livro por isbn","className":"failed"},{"id":3,"group":3,"content":"features\/livraria\/registrar-livro-usuario[1:13]","start":1768162904066,"end":1768162914597,"title":"features\/livraria\/registrar-livro-usuario[1:13] 17:21:44.066-17:21:54.597 Adicionar livro ao usuário","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"e8837bda-5986-49a7-b470-30b2f3be4914",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.conta.cadastrar-usuario</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-10 08:20:26 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:23]"><span>[1.1:23]</span> <span>Cadastro usuario</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/conta/cadastrar-usuario.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Cadastro usuarios</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">registrarUsuario</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:23]</span>
+                <span class="scenario-name">Cadastro usuario</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def nomeUsuario = Java.type(&#39;features.support.utils.Utils&#39;).gerarNomeFake()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7">20:20:26.807 callSingle() will cache an exception
+20:20:26.808 &lt;&lt; lock released, cached callSingle: classpath:features/conta/gerar-token.feature
+20:20:26.808 callSingle() cached result is an exception
+20:20:26.823 classpath:features/conta/cadastrar-usuario.feature:7
+* def nomeUsuario = Java.type(&#39;features.support.utils.Utils&#39;).gerarNomeFake()
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.7.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.conta.gerar-token</div>
+      </div>
+      <div class="time-cell passed">199</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyRequest = read(&#39;classpath:features/conta/dadosConta/dados-registro-usuario.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">190</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7.0.call.0.7">20:20:26.469 &gt;&gt; lock acquired, begin callSingle: classpath:features/conta/gerar-token.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.9">
+      <div class="step-ref failed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7.0.call.0.9">20:20:26.795 classpath:features/conta/gerar-token.feature:9
+Given url baseUrl
+js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.10">
+      <div class="step-ref skipped">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>path &quot;/Account/v1/GenerateToken&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.11">
+      <div class="step-ref skipped">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request bodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.12">
+      <div class="step-ref skipped">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.13">
+      <div class="step-ref skipped">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>response.token != null</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.14">
+      <div class="step-ref skipped">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.7.0.call">
+    <div class="step-container" id="1.7.0.call.0.15">
+      <div class="step-ref skipped">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def token = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def senhaUsuario = Java.type(&#39;features.support.utils.Utils&#39;).gerarSenha()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">20:20:26.826 classpath:features/conta/cadastrar-usuario.feature:8
+* def senhaUsuario = Java.type(&#39;features.support.utils.Utils&#39;).gerarSenha()
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+classpath:features/conta/cadastrar-usuario.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def bodyRequest = read(&#39;classpath:features/conta/dadosConta/dados-registro-usuario.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.9">20:20:26.831 classpath:features/conta/cadastrar-usuario.feature:9
+* def bodyRequest = read(&#39;classpath:features/conta/dadosConta/dados-registro-usuario.json&#39;)
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+classpath:features/conta/cadastrar-usuario.feature:8
+classpath:features/conta/cadastrar-usuario.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.11">20:20:26.832 classpath:features/conta/cadastrar-usuario.feature:11
+Given url baseUrl
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+classpath:features/conta/cadastrar-usuario.feature:8
+classpath:features/conta/cadastrar-usuario.feature:9
+classpath:features/conta/cadastrar-usuario.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>path &quot;/Account/v1/User&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">20:20:26.844 classpath:features/conta/cadastrar-usuario.feature:12
+And path &quot;/Account/v1/User&quot;
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+classpath:features/conta/cadastrar-usuario.feature:8
+classpath:features/conta/cadastrar-usuario.feature:9
+classpath:features/conta/cadastrar-usuario.feature:11
+classpath:features/conta/cadastrar-usuario.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request bodyRequest</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">20:20:26.846 classpath:features/conta/cadastrar-usuario.feature:13
+And request bodyRequest
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+classpath:features/conta/cadastrar-usuario.feature:8
+classpath:features/conta/cadastrar-usuario.feature:9
+classpath:features/conta/cadastrar-usuario.feature:11
+classpath:features/conta/cadastrar-usuario.feature:12
+classpath:features/conta/cadastrar-usuario.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">20:20:26.859 classpath:features/conta/cadastrar-usuario.feature:14
+When method post
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+classpath:features/conta/cadastrar-usuario.feature:8
+classpath:features/conta/cadastrar-usuario.feature:9
+classpath:features/conta/cadastrar-usuario.feature:11
+classpath:features/conta/cadastrar-usuario.feature:12
+classpath:features/conta/cadastrar-usuario.feature:13
+classpath:features/conta/cadastrar-usuario.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref failed">15</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">20:20:26.861 classpath:features/conta/cadastrar-usuario.feature:15
+Then status 201
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+classpath:features/conta/cadastrar-usuario.feature:8
+classpath:features/conta/cadastrar-usuario.feature:9
+classpath:features/conta/cadastrar-usuario.feature:11
+classpath:features/conta/cadastrar-usuario.feature:12
+classpath:features/conta/cadastrar-usuario.feature:13
+classpath:features/conta/cadastrar-usuario.feature:14
+classpath:features/conta/cadastrar-usuario.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">20:20:26.878 classpath:features/conta/cadastrar-usuario.feature:16
+And print response
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+classpath:features/conta/cadastrar-usuario.feature:8
+classpath:features/conta/cadastrar-usuario.feature:9
+classpath:features/conta/cadastrar-usuario.feature:11
+classpath:features/conta/cadastrar-usuario.feature:12
+classpath:features/conta/cadastrar-usuario.feature:13
+classpath:features/conta/cadastrar-usuario.feature:14
+classpath:features/conta/cadastrar-usuario.feature:15
+classpath:features/conta/cadastrar-usuario.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>print response.userID</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.17">20:20:26.884 classpath:features/conta/cadastrar-usuario.feature:17
+And print response.userID
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+classpath:features/conta/cadastrar-usuario.feature:8
+classpath:features/conta/cadastrar-usuario.feature:9
+classpath:features/conta/cadastrar-usuario.feature:11
+classpath:features/conta/cadastrar-usuario.feature:12
+classpath:features/conta/cadastrar-usuario.feature:13
+classpath:features/conta/cadastrar-usuario.feature:14
+classpath:features/conta/cadastrar-usuario.feature:15
+classpath:features/conta/cadastrar-usuario.feature:16
+classpath:features/conta/cadastrar-usuario.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>def usuarioID = response.userID</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.18">20:20:26.889 classpath:features/conta/cadastrar-usuario.feature:18
+And def usuarioID = response.userID
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+classpath:features/conta/cadastrar-usuario.feature:8
+classpath:features/conta/cadastrar-usuario.feature:9
+classpath:features/conta/cadastrar-usuario.feature:11
+classpath:features/conta/cadastrar-usuario.feature:12
+classpath:features/conta/cadastrar-usuario.feature:13
+classpath:features/conta/cadastrar-usuario.feature:14
+classpath:features/conta/cadastrar-usuario.feature:15
+classpath:features/conta/cadastrar-usuario.feature:16
+classpath:features/conta/cadastrar-usuario.feature:17
+classpath:features/conta/cadastrar-usuario.feature:18
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>assert responseTime &lt; 5000</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.19">20:20:26.893 classpath:features/conta/cadastrar-usuario.feature:19
+And assert responseTime &lt; 5000
+&gt;&gt; classpath:features/conta/cadastrar-usuario.feature:23
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env; // get system property &#39;karate.env&#39;
+03:     var config = {env: env} //objeto de configuração global
+04:     // var headers = {&quot;cache-control&quot;: &quot;no-cache&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;} //headers fixos em todas as requests
+05:     config.baseUrl = &quot;https://bookstore.demoqa.com&quot;
+06: 
+07:     var tokenResult = karate.callSingle(&#39;classpath:features/conta/gerar-token.feature&#39;);
+08:     config.token = tokenResult.token;
+09: 
+10:     karate.configure(&#39;headers&#39;, {
+11:         Authorization: &#39;Bearer &#39; + config.token
+12:     });
+13: 
+14:     karate.log(&#39;karate.env system property was:&#39;, env);
+15: 
+16:     //Define ambiente padrão se não for informado o karate env
+17:     // if (!env) { env = &#39;qa&#39;; }
+18:     //
+19:     // switch (env) {
+20:     //
+21:     //     case &#39;qa&#39;:
+22:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;qa&#39;]
+23:     //
+24:     //         break;
+25:     //
+26:     //     case &#39;des&#39;:
+27:     //         config = karate.read(&#39;classpath:features/support/config/baseUrl.yaml&#39;)[&#39;dev&#39;]
+28:     //         break;
+29:     //
+30:     //     default:
+31:     // }
+32: 
+33:     karate.log(&#39;karate.env system property was:&#39;, env);
+34:     // karate.configure(&#39;headers&#39;, headers);
+35:     karate.configure(&#39;retry&#39;, {count: 10, interval: 5000}); //10 tentativas com invtervalo de 5 segundos
+36: 
+37:     return config;
+38: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/conta/gerar-token.feature:9
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:158)
+- &lt;js&gt;.fn(Unnamed:7)
+
+classpath:features/conta/cadastrar-usuario.feature:7
+classpath:features/conta/cadastrar-usuario.feature:8
+classpath:features/conta/cadastrar-usuario.feature:9
+classpath:features/conta/cadastrar-usuario.feature:11
+classpath:features/conta/cadastrar-usuario.feature:12
+classpath:features/conta/cadastrar-usuario.feature:13
+classpath:features/conta/cadastrar-usuario.feature:14
+classpath:features/conta/cadastrar-usuario.feature:15
+classpath:features/conta/cadastrar-usuario.feature:16
+classpath:features/conta/cadastrar-usuario.feature:17
+classpath:features/conta/cadastrar-usuario.feature:18
+classpath:features/conta/cadastrar-usuario.feature:19
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

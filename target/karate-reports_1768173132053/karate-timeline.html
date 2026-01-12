@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/conta\/02_cadastrar-usuario[1.1:28]","start":1768172927992,"end":1768172931555,"title":"features\/conta\/02_cadastrar-usuario[1.1:28] 20:08:47.992-20:08:51.555 Cadastro usuario","className":"failed"},{"id":2,"group":2,"content":"features\/conta\/03_gerar-token[1:6]","start":1768172927991,"end":1768172935256,"title":"features\/conta\/03_gerar-token[1:6] 20:08:47.991-20:08:55.256 Gerar token"},{"id":3,"group":3,"content":"features\/conta\/04_autorizar-usuario[1:6]","start":1768172927991,"end":1768172935279,"title":"features\/conta\/04_autorizar-usuario[1:6] 20:08:47.991-20:08:55.279 Autorizar usuário","className":"failed"},{"id":4,"group":4,"content":"features\/conta\/08_deleta-usuario[1:6]","start":1768172927992,"end":1768172929126,"title":"features\/conta\/08_deleta-usuario[1:6] 20:08:47.992-20:08:49.126 Deletar um usuario com sucesso","className":"failed"},{"id":5,"group":5,"content":"features\/livraria\/05_listar-livros[1:7]","start":1768172927992,"end":1768172934086,"title":"features\/livraria\/05_listar-livros[1:7] 20:08:47.992-20:08:54.086 Listar catálogo"},{"id":6,"group":4,"content":"features\/livraria\/05_listar-livros[2:18]","start":1768172929237,"end":1768172929303,"title":"features\/livraria\/05_listar-livros[2:18] 20:08:49.237-20:08:49.303 Listar livro por isbn","className":"failed"},{"id":7,"group":4,"content":"features\/livraria\/06_registrar-livro-usuario[1:16]","start":1768172929419,"end":1768172929539,"title":"features\/livraria\/06_registrar-livro-usuario[1:16] 20:08:49.419-20:08:49.539 Adicionar livro ao usuário","className":"failed"},{"id":8,"group":4,"content":"features\/livraria\/07_atualiza-isbn[1:6]","start":1768172929572,"end":1768172930055,"title":"features\/livraria\/07_atualiza-isbn[1:6] 20:08:49.572-20:08:50.055 Atualiza isbn","className":"failed"},{"id":9,"group":4,"content":"features\/setup\/01_setup[1:3]","start":1768172930150,"end":1768172930569,"title":"features\/setup\/01_setup[1:3] 20:08:50.150-20:08:50.569 Preparar dados","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/conta\/autorizar-usuario[1:6]","start":1768172291893,"end":1768172296633,"title":"features\/conta\/autorizar-usuario[1:6] 19:58:11.893-19:58:16.633 Autorizar usuário","className":"failed"},{"id":2,"group":1,"content":"features\/conta\/cadastrar-usuario[1.1:28]","start":1768172299456,"end":1768172303204,"title":"features\/conta\/cadastrar-usuario[1.1:28] 19:58:19.456-19:58:23.204 Cadastro usuario"},{"id":3,"group":1,"content":"features\/conta\/deleta-usuario[1:6]","start":1768172304448,"end":1768172304491,"title":"features\/conta\/deleta-usuario[1:6] 19:58:24.448-19:58:24.491 Deletar um usuario com sucesso","className":"failed"},{"id":4,"group":1,"content":"features\/conta\/gerar-token[1:6]","start":1768172304945,"end":1768172306436,"title":"features\/conta\/gerar-token[1:6] 19:58:24.945-19:58:26.436 Gerar token"},{"id":5,"group":1,"content":"features\/conta\/lista-usuario[1:10]","start":1768172306834,"end":1768172311646,"title":"features\/conta\/lista-usuario[1:10] 19:58:26.834-19:58:31.646 Listar usuário","className":"failed"},{"id":6,"group":1,"content":"features\/livraria\/atualiza-isbn[1:6]","start":1768172312742,"end":1768172312909,"title":"features\/livraria\/atualiza-isbn[1:6] 19:58:32.742-19:58:32.909 Atualiza isbn","className":"failed"},{"id":7,"group":1,"content":"features\/livraria\/listar-livros[1:7]","start":1768172313560,"end":1768172314498,"title":"features\/livraria\/listar-livros[1:7] 19:58:33.560-19:58:34.498 Listar catálogo"},{"id":8,"group":1,"content":"features\/livraria\/listar-livros[2:18]","start":1768172314507,"end":1768172316357,"title":"features\/livraria\/listar-livros[2:18] 19:58:34.507-19:58:36.357 Listar livro por isbn"},{"id":9,"group":1,"content":"features\/livraria\/registrar-livro-usuario[1:16]","start":1768172316943,"end":1768172322177,"title":"features\/livraria\/registrar-livro-usuario[1:16] 19:58:36.943-19:58:42.177 Adicionar livro ao usuário","className":"failed"},{"id":10,"group":1,"content":"features\/setup\/setup[1:3]","start":1768172322959,"end":1768172327297,"title":"features\/setup\/setup[1:3] 19:58:42.959-19:58:47.297 Preparar dados","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

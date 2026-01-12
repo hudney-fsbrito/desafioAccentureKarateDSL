@@ -1,0 +1,8 @@
+{
+  "userId": "#(userID)",
+  "collectionOfIsbns": [
+    {
+      "isbn": "#(isbnDoCatalogo)"
+    }
+  ]
+}
