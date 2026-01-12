@@ -30,3 +30,4 @@ Feature: Registrar livro
     And assert responseTime < 5000
     And match response.books[0].isbn == isbn
     * def isbnRegistrado = response.books[0].isbn
+    * print 'Livro registrado!'

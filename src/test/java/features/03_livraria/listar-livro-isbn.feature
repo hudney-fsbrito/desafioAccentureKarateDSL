@@ -16,3 +16,4 @@ Feature:  Listar livro por isbn
     Then status 200
     And print response
     And match response.isbn == isbn
+    * print 'Livro por isbn listado'

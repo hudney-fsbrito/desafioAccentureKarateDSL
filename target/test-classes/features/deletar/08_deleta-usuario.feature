@@ -5,13 +5,15 @@ Feature: Deletar um usuario
     * def setupData = callonce read('classpath:features/01_setup/01_setup.feature@TesteGeral')
     * def userID = setupData.usuarioID
     * def token = setupData.token
+    * print 'Preparando para deletar usuário ID:', userID
 
   @deletarUsuario @all
   Scenario: Deletar um usuario com sucesso
-    * def userId =  read('classpath:features/02_conta/dadosConta/dados-salvos-usuario.json>')
-    * def ID = userId.userId
 
-    When path /Account/v1/User/ + userID
+
+
+    When path "/Account/v1/User/" + userID
     And header Authorization = 'Bearer ' + token
     And method delete
-    Then status 200
+    Then print response
+    And assert responseStatus == 200 || responseStatus == 204

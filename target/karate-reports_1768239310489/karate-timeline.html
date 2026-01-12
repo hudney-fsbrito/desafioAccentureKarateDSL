@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/01_setup\/01_setup[1:4]","start":1768239122771,"end":1768239132754,"title":"features\/01_setup\/01_setup[1:4] 14:32:02.771-14:32:12.754 Cadastra usuario, gera o token e autoriza usuario"},{"id":2,"group":1,"content":"features\/03_livraria\/06_registrar-livro-usuario[1:12]","start":1768239138149,"end":1768239143653,"title":"features\/03_livraria\/06_registrar-livro-usuario[1:12] 14:32:18.149-14:32:23.653 Adicionar livro ao usuário"},{"id":3,"group":1,"content":"features\/03_livraria\/07_atualiza-isbn[1:12]","start":1768239144764,"end":1768239156076,"title":"features\/03_livraria\/07_atualiza-isbn[1:12] 14:32:24.764-14:32:36.076 Atualiza isbn"},{"id":4,"group":1,"content":"features\/deletar\/08_deleta-usuario[1:11]","start":1768239158239,"end":1768239164591,"title":"features\/deletar\/08_deleta-usuario[1:11] 14:32:38.239-14:32:44.591 Deletar um usuario com sucesso","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
