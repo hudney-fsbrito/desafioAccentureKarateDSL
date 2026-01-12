@@ -12,7 +12,7 @@ class KarateTest {
     void testParallel() {
         Results results = Runner
                 .path("classpath:features") //Diz ao Karate: “Execute todos os .feature que estão no pacote features”
-                .tags("@TesteGeral")
+                .tags("@TesteGeral,@registrarLivros,@atualizaIsbn,@deletarUsuario")
                 //.tags("@all")
                 //.tags("@registrarUsuario")
                 //.tags("@token")

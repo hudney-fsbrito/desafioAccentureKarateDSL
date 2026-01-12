@@ -2,15 +2,19 @@ Feature: Registrar livro
 
   Background:
     Given url baseUrl
+    * def setupData = callonce read('classpath:features/01_setup/01_setup.feature@TesteGeral')
+    * def userID = setupData.usuarioID
+    * def token = setupData.token
+    * def isbn = setupData.isbn
 
 
   @registrarLivros @all
   Scenario: Adicionar livro ao usuário
-    * def livros = call read('classpath:features/03_livraria/05_listar-livros.feature@all')
-    * def isbn = livros.isbnSalvo
+
 
     Given path "/BookStore/v1/Books"
     And header Authorization = 'Bearer ' + token
+    And header Content-Type = 'application/json'
     And request
     """
       {
@@ -24,4 +28,5 @@ Feature: Registrar livro
     Then status 201
     And print response
     And assert responseTime < 5000
-    * def isbn = response.collectionOfIsbns.isbn
+    And match response.books[0].isbn == isbn
+    * def isbnRegistrado = response.books[0].isbn

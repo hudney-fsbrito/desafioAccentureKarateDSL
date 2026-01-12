@@ -25,6 +25,7 @@ Feature: Setup para teste geral
     And def usuarioID = response.userID
     And print usuarioID
     * print bodyRequest
+    * print 'Cadastro realizado com sucesso'
 
     Given url baseUrl
     And path "/Account/v1/GenerateToken"
@@ -35,6 +36,7 @@ Feature: Setup para teste geral
     * print response
     * def token = response.token
     * print token
+    * print 'Token gerado com sucesso'
 
     Given url baseUrl
     And path "/Account/v1/Authorized"
@@ -42,12 +44,13 @@ Feature: Setup para teste geral
     When method post
     Then status 200
     * print response
+    * print 'Autorização OK!'
 
-    * def livros = call read('classpath:features/03_livraria/05_listar-livros.feature')
+    * def livros = call read('classpath:features/03_livraria/05_listar-livros.feature@catalogo')
     * def isbn = livros.isbnSalvo
     * print 'ISBN selecionado:', isbn
 
-    * Karate.set('globalUserID', usuarioID)
+    * karate.set('globalUserID', usuarioID)
     * karate.set('globalUserName', nome)
     * karate.set('globalSenha', senhaFinal)
     * karate.set('globalToken', token)
@@ -66,4 +69,3 @@ Feature: Setup para teste geral
     """
 
     * print result
-    * return result

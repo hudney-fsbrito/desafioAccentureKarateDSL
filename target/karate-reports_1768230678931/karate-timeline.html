@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/01_setup\/01_setup[1:4]","start":1768230514828,"end":1768230530098,"title":"features\/01_setup\/01_setup[1:4] 12:08:34.828-12:08:50.098 Cadastra usuario, gera o token e autoriza usuario"},{"id":2,"group":1,"content":"features\/03_livraria\/06_registrar-livro-usuario[1:12]","start":1768230536925,"end":1768230537192,"title":"features\/03_livraria\/06_registrar-livro-usuario[1:12] 12:08:56.925-12:08:57.192 Adicionar livro ao usuário","className":"failed"},{"id":3,"group":1,"content":"features\/03_livraria\/07_atualiza-isbn[1:6]","start":1768230538574,"end":1768230538728,"title":"features\/03_livraria\/07_atualiza-isbn[1:6] 12:08:58.574-12:08:58.728 Atualiza isbn","className":"failed"},{"id":4,"group":1,"content":"features\/deletar\/08_deleta-usuario[1:10]","start":1768230539450,"end":1768230539463,"title":"features\/deletar\/08_deleta-usuario[1:10] 12:08:59.450-12:08:59.463 Deletar um usuario com sucesso","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
