@@ -26,3 +26,4 @@ Feature:
     Then print response
     And status 200
     And match response.books[0].isbn == segundoisbnSalvo
+    * print 'Livro ATUALIZADO!'

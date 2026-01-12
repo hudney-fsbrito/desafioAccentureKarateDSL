@@ -17,3 +17,4 @@ Feature: Deletar um usuario
     And method delete
     Then print response
     And assert responseStatus == 200 || responseStatus == 204
+    * print 'usuário excluido!'
